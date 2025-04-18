@@ -1,5 +1,5 @@
 const Movie = require('../models/Movie');
-
+//metodo para obtener todas las películas y renderizar la vista
 exports.getAllMovies = async (req, res) => {
     try {
         const [movies] = await Movie.fetchAll();
